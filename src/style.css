@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --background: #121212;
+  --foreground: #e1e1e1;
+  --dark-gray: #1e1e1e;
+  --light-gray: #7a7a7a;
+  --primary: #c38fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+
+  border: none;
+  background-color: transparent;
+}
+
+*::selection {
+  color: var(--background);
+  background-color: var(--primary);
+}
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+
+  background-color: var(--background);
+}
+
+h1 {
+  margin: 1.2rem 0rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--foreground);
+}
+
+.form {
+  max-width: 40rem;
+  padding: 2.4rem 2.4rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 0.4rem;
+
+  background-color: var(--dark-gray);
+}
+
+.form label {
+  font-size: 1.2rem;
+  color: var(--light-gray);
+}
+
+.form label:hover {
+  text-decoration: underline;
+}
+
+.form input {
+  font-size: 1.2rem;
+  color: var(--foreground);
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form button {
+  padding: 1.2rem 2.4rem;
+  margin-left: 1.2rem;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+
+  border-radius: 0.4rem;
+  background-color: var(--primary);
+}
+
+.form button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+.form button:active {
+  background-color: var(--foreground);
+}
+
+.result {
+  margin: 1.2rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.result label {
+  font-size: 1.2rem;
+  color: var(--light-gray);
+}
+
+.result #newPass {
+  margin: 0.8rem 0rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--foreground);
+}
