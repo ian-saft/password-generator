@@ -13,8 +13,8 @@ function generatePass() {
   const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
   let password = "";
 
-  for (let i = 0, n = charset.length; i < pass.value; i++) {
-    password += charset.charAt(Math.floor(Math.random() * n));
+  for (let i = 0; i < pass.value; i++) {
+    password += charset.charAt(Math.floor(Math.random() * charset.length));
   }
 
   const result = document.createTextNode(password);
